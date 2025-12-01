@@ -1,0 +1,353 @@
+﻿<ThingDefs><List>
+	<!--system下的item名称不能随意更改-->
+
+	<ThingDef Type="Item" Name="Item_HorribleMeal" Parent="SimpleFoodBase">
+	<ThingName>搞砸的饭菜</ThingName>
+	<TexPath>res\Sprs\object\object_BadFood</TexPath>
+	<Desc>一道烹饪失败的料理，味道十分勉强，仅仅可以填肚子。</Desc>
+	<Beauty>1</Beauty>
+	<Tags>
+		<Tag Name="Food" Level="-1"/>
+		<Tag Name="BowlFood" Level="1"/>
+	</Tags>	
+	<MaxStack>100</MaxStack>
+	<Item>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>40</Nutrition>
+			<Moods>
+				<li>Eat3</li>
+			</Moods>
+			<Damages>
+				<li PartName="TheWholeBody" Name="AbdominalPain" Rate="0.5"/>
+				<li Rate="0.5"/>
+			</Damages>
+		</Food>
+		<BeMade>
+			<WorkToMake>20</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<Condition>
+					<Skills>
+						<!--<Skill name = "sss" level="1"/>-->
+					</Skills>
+					<Researchs>
+						<!--<Research name = "sss" level="1"/>-->
+					</Researchs>
+			</Condition>
+			<StuffCategories>
+				<Stuff name = "Meat"/>
+				<Stuff name = "Ingredient"/>
+			</StuffCategories>
+			<CostStuffCount>1</CostStuffCount>
+		</BeMade> 
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_DragonShit" Parent="MaterialBase">	
+	<Tags>
+		<Tag Name="_SHIT" Level="1"/>
+	</Tags>
+	<ThingName>天龙砂</ThingName>
+	<TexScale>3</TexScale>
+	<TexPath>res\Sprs\object\object_shi01</TexPath>	
+	<Desc>龙的粪便。</Desc>
+	<MaxStack>1</MaxStack>
+	<Beauty>-20</Beauty>
+	<Rate>5</Rate>
+	<ElementKind>Tu</ElementKind>
+	<Item Lable="Other">
+		<FabaoSuffix>粪,砂,屎</FabaoSuffix>
+		<PhysicalLables>
+			<li>Rough2</li>
+			<li>LowDensity2</li>
+			<li>GreatThing_Ling</li>
+			<li>Shit</li>
+		</PhysicalLables>		 
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>50</Nutrition>
+			<Moods>
+				<li>Eat12</li>
+			</Moods>
+		</Food>
+		 <Rot>
+			 <RotSpeed>0.001</RotSpeed>
+			 <DaysToRotStart>0</DaysToRotStart>
+			 <DestroyThing></DestroyThing>
+			 <TempMin>0</TempMin>
+			 <LingMax>200</LingMax>
+		 </Rot>
+	</Item>
+	<Ling>
+		<AddionLing>75</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.05</Attenuation>
+		<Absorption>0.4</Absorption>
+		<Accommodate>40</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Tu</Kind>
+		<Value>3</Value>         
+		<Radius>3</Radius>
+		<Failing>0.6</Failing>
+		<FailRadius>0</FailRadius>
+	</Element>
+	</ThingDef>		
+
+	<ThingDef Type="Item" Name="Item_DragonScaleGift" Parent="MaterialBase">
+		<ThingName>龙鳞礼盒</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>res\Sprs\object\object_shixiazi01</TexPath>
+		<Desc>用龙鳞换来的小礼包233333。</Desc>	
+		<Beauty>12</Beauty>	
+		<Rate>12</Rate>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="_StoneBox" Level="1"/>
+		</Tags>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">		
+		<BeMade>
+			<WorkToMake>30</WorkToMake>
+			<CostItems>
+				<Item name = "Item_DragonScale" count = "1"/>
+			</CostItems>
+		</BeMade> 
+			<FabaoSuffix>匣</FabaoSuffix>			
+		</Item>
+		<StoryBnts>
+			<li Name="打开" Desc="试着打开这个匣子" Story="Story_Item_DragonScaleGift" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_lowbox" Parent="MaterialBase">
+		<ThingName>下品灵石箱</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>res\Sprs\object\object_shixiazi01</TexPath>
+		<Desc>10灵石=1下品灵石，箱子内有50下品灵石，有隐藏奖励233333。</Desc>	
+		<Beauty>12</Beauty>	
+		<Rate>12</Rate>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="_StoneBox" Level="1"/>
+		</Tags>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">		
+		<BeMade>
+			<WorkToMake>10</WorkToMake>
+			<CostItems>
+				<Item name = "Item_LingStone" count = "500"/>
+			</CostItems>
+		</BeMade> 
+			<FabaoSuffix>匣</FabaoSuffix>			
+		</Item>
+		<StoryBnts>
+			<li Name="打开" Desc="试着打开这个匣子" Story="Story_Item_lowboxget" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_LingStonemidGift" Parent="MaterialBase">
+		<ThingName>中品灵石礼盒</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>res\Sprs\object\object_shixiazi01</TexPath>
+		<Desc>用中品灵石换来的小礼包233333。</Desc>	
+		<Beauty>12</Beauty>	
+		<Rate>12</Rate>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="_StoneBox" Level="1"/>
+		</Tags>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">		
+		<BeMade>
+			<WorkToMake>30</WorkToMake>
+			<CostItems>
+				<Item name = "Item_LingStonemid" count = "10"/>
+			</CostItems>
+		</BeMade> 
+			<FabaoSuffix>匣</FabaoSuffix>			
+		</Item>
+		<StoryBnts>
+			<li Name="打开" Desc="试着打开这个匣子" Story="Item_LingStonemidGiftget" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_midtguestbox" Parent="MaterialBase">
+		<ThingName>圭佑30中品灵石利息单神秘宝箱</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>res\Sprs\object\object_shixiazi01</TexPath>
+		<Desc>神秘箱子有几率损失1半灵石，或多出一半灵石。</Desc>	
+		<Beauty>12</Beauty>	
+		<Rate>9</Rate>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="_StoneBox" Level="1"/>
+		</Tags>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">		
+		<BeMade>
+			<WorkToMake>30</WorkToMake>
+			<CostItems>
+				<Item name = "Item_AF_LD4" count = "1"/>
+			</CostItems>
+		</BeMade> 
+			<FabaoSuffix>匣</FabaoSuffix>			
+		</Item>
+		<StoryBnts>
+			<li Name="打开" Desc="试着打开这个宝箱" Story="Story_Item_midtguestboxget" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_midfguestbox" Parent="MaterialBase">
+		<ThingName>圭佑50中品灵石利息单神秘宝箱</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>res\Sprs\object\object_shixiazi01</TexPath>
+		<Desc>神秘箱子有几率损失1半灵石，或多出一半灵石。</Desc>	
+		<Beauty>12</Beauty>	
+		<Rate>9</Rate>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="_StoneBox" Level="1"/>
+		</Tags>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">		
+		<BeMade>
+			<WorkToMake>30</WorkToMake>
+			<CostItems>
+				<Item name = "Item_AF_LD5" count = "1"/>
+			</CostItems>
+		</BeMade> 
+			<FabaoSuffix>匣</FabaoSuffix>			
+		</Item>
+		<StoryBnts>
+			<li Name="打开" Desc="试着打开这个宝箱" Story="Story_Item_midfguestboxget" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_higtguestbox" Parent="MaterialBase">
+		<ThingName>圭佑30上品灵石利息单神秘宝箱</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>res\Sprs\object\object_shixiazi01</TexPath>
+		<Desc>神秘箱子有几率损失1半灵石，或多出一半灵石。</Desc>	
+		<Beauty>12</Beauty>	
+		<Rate>9</Rate>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="_StoneBox" Level="1"/>
+		</Tags>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">		
+		<BeMade>
+			<WorkToMake>30</WorkToMake>
+			<CostItems>
+				<Item name = "Item_AF_LD6" count = "1"/>
+			</CostItems>
+		</BeMade> 
+			<FabaoSuffix>匣</FabaoSuffix>			
+		</Item>
+		<StoryBnts>
+			<li Name="打开" Desc="试着打开这个宝箱" Story="Story_Item_higtguestboxget" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>	
+
+	<ThingDef Type="Item" Name="Item_higfguestbox" Parent="MaterialBase">
+		<ThingName>圭佑50上品灵石利息单神秘宝箱</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>res\Sprs\object\object_shixiazi01</TexPath>
+		<Desc>神秘箱子有几率损失1半灵石，或多出一半灵石。</Desc>	
+		<Beauty>12</Beauty>	
+		<Rate>9</Rate>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="_StoneBox" Level="1"/>
+		</Tags>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">		
+		<BeMade>
+			<WorkToMake>30</WorkToMake>
+			<CostItems>
+				<Item name = "Item_AF_LD7" count = "1"/>
+			</CostItems>
+		</BeMade> 
+			<FabaoSuffix>匣</FabaoSuffix>			
+		</Item>
+		<StoryBnts>
+			<li Name="打开" Desc="试着打开这个宝箱" Story="Story_Item_higfguestboxget" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_randbox" Parent="MaterialBase">
+		<ThingName>神秘宝箱</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>res\Sprs\object\object_shixiazi01</TexPath>
+		<Desc>神秘箱子里面不知道是什么。</Desc>	
+		<Beauty>12</Beauty>	
+		<Rate>9</Rate>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="_StoneBox" Level="1"/>
+		</Tags>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">		
+		<BeMade>
+			<WorkToMake>30</WorkToMake>
+			<CostItems>
+				<Item name = "Item_LingStonemid" count = "50"/>
+			</CostItems>
+		</BeMade> 
+			<FabaoSuffix>匣</FabaoSuffix>			
+		</Item>
+		<StoryBnts>
+			<li Name="鉴定" Desc="试着鉴定这个宝箱" Story="Story_Item_randboxget" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_purplebox" Parent="MaterialBase">
+		<ThingName>紫布宝箱</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>res\Sprs\object\object_shixiazi01</TexPath>
+		<Desc>100紫布=25下品。</Desc>	
+		<Beauty>12</Beauty>	
+		<Rate>9</Rate>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="_StoneBox" Level="1"/>
+		</Tags>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">		
+		<BeMade>
+			<WorkToMake>15</WorkToMake>
+			<CostItems>
+				<Item name = "Item_PurpleCloth" count = "100"/>
+			</CostItems>
+		</BeMade> 
+			<FabaoSuffix>匣</FabaoSuffix>			
+		</Item>
+		<StoryBnts>
+			<li Name="打开" Desc="试着打开这个宝箱" Story="Story_Item_purpleboxget" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+
+</List></ThingDefs>

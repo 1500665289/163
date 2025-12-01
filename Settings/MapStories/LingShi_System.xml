@@ -1,0 +1,2325 @@
+﻿<Stories><List>	
+<!--系统使用，不能修改-->
+	<Story Name="Story_Item_DragonScaleGift" Parent="BaseFillingStory">
+		<DisplayName>龙鳞礼盒</DisplayName>
+		<Desc>用龙鳞换来的小礼包233333。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>打开</Display>
+				<OKResult>
+				<![CDATA[	
+				story:RemoveBindItem();
+				local nR = me:RandomInt(1, 100); 
+				if nR <= 2 then
+					me:AddMsg("[NAME]打开礼包，发现自己开出了十倍大礼包！！！。");me:DropAwardItem("Item_DarksteelRock",100);me:DropAwardItem("Item_SoulCrystalYou",100);me:DropAwardItem("Item_LingStonehiggest",10);me:DropAwardItem("Item_LuShuLeather",3000);me:DropAwardItem("Item_ThunderAir",1);me:DropAwardItem("Item_MonsterBlood",500);
+				else
+					me:AddMsg("[NAME]打开礼包，发现有不少好东西。PS：有几率开出十倍哦~。");me:DropAwardItem("Item_DarksteelRock",10);me:DropAwardItem("Item_SoulCrystalYou",10);me:DropAwardItem("Item_LingStonehiggest",1);me:DropAwardItem("Item_LuShuLeather",300);me:DropAwardItem("Item_MonsterBlood",50);
+				end
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+
+	<Story Name="Story_Item_lowboxget" Parent="BaseFillingStory">
+		<DisplayName>下品灵石箱</DisplayName>
+		<Desc>10灵石=1下品灵石，箱子内有50下品灵石，有隐藏奖励233333。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>打开</Display>
+				<OKResult>
+				<![CDATA[	
+				story:RemoveBindItem();
+				local cR = me:RandomInt(1, 50); 
+				if cR <= 2 then
+					me:AddMsg("[NAME]打开礼包，发现自己开出了五倍大礼包！！！。");me:DropAwardItem("Item_LingStonelow",250);
+				else
+					me:AddMsg("[NAME]打开礼包，发现有不少好东西。PS：有几率开出五倍哦~。");me:DropAwardItem("Item_LingStonelow",50);
+				end
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>	
+
+	<Story Name="AF_CZLD1" Parent="BaseFillingStory">
+		<DisplayName>圭佑250灵石利息单</DisplayName>
+		<Desc>可获得251灵石。(0.4%)</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>打开</Display>
+				<OKResult>
+				<![CDATA[	
+				story:RemoveBindItem();				
+				me:AddMsg("[NAME]打开礼包，获得251灵石！！！。");me:DropAwardItem("Item_LingStone",251);
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+
+	<Story Name="AF_CZLD2" Parent="BaseFillingStory">
+		<DisplayName>圭佑500灵石利息单</DisplayName>
+		<Desc>可获得502灵石。(0.4%)</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>打开</Display>
+				<OKResult>
+				<![CDATA[	
+				story:RemoveBindItem();				
+				me:AddMsg("[NAME]打开礼包，获得502灵石！！！。");me:DropAwardItem("Item_LingStone",502);
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+
+	<Story Name="AF_CZLD3" Parent="BaseFillingStory">
+		<DisplayName>圭佑50下品灵石利息单</DisplayName>
+		<Desc>可获得57下品灵石。(14%)</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>打开</Display>
+				<OKResult>
+				<![CDATA[	
+				story:RemoveBindItem();				
+				me:AddMsg("[NAME]打开礼包，获得57下品灵石。！！！。");me:DropAwardItem("Item_LingStonelow",57);
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+
+	<Story Name="AF_CZLD4" Parent="BaseFillingStory">
+		<DisplayName>圭佑30中品灵石利息单</DisplayName>
+		<Desc>可获得33中品灵石。(9%)</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>打开</Display>
+				<OKResult>
+				<![CDATA[	
+				story:RemoveBindItem();				
+				me:AddMsg("[NAME]打开礼包，获得30中品灵石。！！！。");me:DropAwardItem("Item_LingStonemid",33);
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+
+	<Story Name="AF_CZLD5" Parent="BaseFillingStory">
+		<DisplayName>圭佑50中品灵石利息单</DisplayName>
+		<Desc>可获得55中品灵石。(9%)</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>打开</Display>
+				<OKResult>
+				<![CDATA[	
+				story:RemoveBindItem();				
+				me:AddMsg("[NAME]打开礼包，获得30中品灵石。！！！。");me:DropAwardItem("Item_LingStonemid",55);
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+
+	<Story Name="AF_CZLD6" Parent="BaseFillingStory">
+		<DisplayName>圭佑30上品灵石利息单</DisplayName>
+		<Desc>可获得31上品灵石。(2%)</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>打开</Display>
+				<OKResult>
+				<![CDATA[	
+				story:RemoveBindItem();				
+				me:AddMsg("[NAME]打开礼包，获得31上品灵石。！！！。");me:DropAwardItem("Item_LingStonehig",31);
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+
+	<Story Name="AF_CZLD7" Parent="BaseFillingStory">
+		<DisplayName>圭佑50上品灵石利息单</DisplayName>
+		<Desc>可获得51上品灵石。(2%)</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>打开</Display>
+				<OKResult>
+				<![CDATA[	
+				story:RemoveBindItem();				
+				me:AddMsg("[NAME]打开礼包，获得51上品灵石。！！！。");me:DropAwardItem("Item_LingStonehig",51);
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+
+	<Story Name="AF_CZLD8" Parent="BaseFillingStory">
+		<DisplayName>圭佑10极品灵石存款单</DisplayName>
+		<Desc>将10极品灵石存入银行。(无利息)</Desc>
+		<Kind>None</Kind>
+			<GlobleOKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(780) >= 0 then
+						world:SetWorldFlag(780,world:GetWorldFlag(780) + 10);
+						me:AddMsg("圭佑商会提醒您，本次存储极品灵石：10，  您当前可用余额为："..world:GetWorldFlag(780));
+					else
+						world:SetWorldFlag(780,0);
+						me:AddMsg("圭佑商会提醒您，本次存储极品灵石：10，  您当前可用余额为："..world:GetWorldFlag(780));
+					end
+					story:RemoveBindItem();
+					
+				]]>
+				</GlobleOKResult>
+		
+	</Story>
+
+	<Story Name="AF_CZLD9" Parent="BaseFillingStory">
+		<DisplayName>圭佑30极品灵石存款单</DisplayName>
+		<Desc>将30极品灵石存入银行。(无利息)</Desc>
+		<Kind>None</Kind>
+			<GlobleOKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(780) >= 0 then
+						world:SetWorldFlag(780,world:GetWorldFlag(780) + 30);
+						me:AddMsg("圭佑商会提醒您，本次存储极品灵石：30，  您当前可用余额为："..world:GetWorldFlag(780));
+					else
+						world:SetWorldFlag(780,0);
+						me:AddMsg("圭佑商会提醒您，本次存储极品灵石：30，  您当前可用余额为："..world:GetWorldFlag(780));
+					end
+					story:RemoveBindItem();
+					
+				]]>
+				</GlobleOKResult>
+		
+	</Story>
+
+	<Story Name="AF_CZLD10" Parent="BaseFillingStory">
+		<DisplayName>圭佑10上品灵石存款单</DisplayName>
+		<Desc>将10上品灵石存入银行。(无利息)</Desc>
+		<Kind>None</Kind>
+			<GlobleOKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(779) >= 0 then
+						world:SetWorldFlag(779,world:GetWorldFlag(779) + 10);
+						me:AddMsg("圭佑商会提醒您，本次存储上品灵石：10，  您当前可用余额为："..world:GetWorldFlag(779));
+					else
+						world:SetWorldFlag(779,0);
+						me:AddMsg("圭佑商会提醒您，本次存储上品灵石：10，  您当前可用余额为："..world:GetWorldFlag(779));
+					end
+					story:RemoveBindItem();
+					
+				]]>
+				</GlobleOKResult>
+		
+	</Story>
+
+	<Story Name="AF_CZLD11" Parent="BaseFillingStory">
+		<DisplayName>圭佑30上品灵石存款单</DisplayName>
+		<Desc>将30上品灵石存入银行。</Desc>
+		<Kind>None</Kind>
+			<GlobleOKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(779) >= 0 then
+						world:SetWorldFlag(779,world:GetWorldFlag(779) + 30);
+						me:AddMsg("圭佑商会提醒您，本次存储上品灵石：30，  您当前可用余额为："..world:GetWorldFlag(779));
+					else
+						world:SetWorldFlag(779,0);
+						me:AddMsg("圭佑商会提醒您，本次存储上品灵石：30，  您当前可用余额为："..world:GetWorldFlag(779));
+					end
+					story:RemoveBindItem();
+					
+				]]>
+				</GlobleOKResult>
+		
+	</Story>
+
+	<Story Name="AF_CZLD12" Parent="BaseFillingStory">
+		<DisplayName>圭佑10中品灵石存款单</DisplayName>
+		<Desc>将10中品灵石存入银行。(无利息)</Desc>
+		<Kind>None</Kind>
+			<GlobleOKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(778) >= 0 then
+						world:SetWorldFlag(778,world:GetWorldFlag(778) + 10);
+						me:AddMsg("圭佑商会提醒您，本次存储中品灵石：10，  您当前可用余额为："..world:GetWorldFlag(778));
+					else
+						world:SetWorldFlag(778,0);
+						me:AddMsg("圭佑商会提醒您，本次存储中品灵石：10，  您当前可用余额为："..world:GetWorldFlag(778));
+					end
+					story:RemoveBindItem();
+					
+				]]>
+				</GlobleOKResult>
+		
+	</Story>
+
+	<Story Name="AF_CZLD13" Parent="BaseFillingStory">
+		<DisplayName>圭佑30中品灵石存款单</DisplayName>
+		<Desc>将30中品灵石存入银行。(无利息)</Desc>
+		<Kind>None</Kind>
+			<GlobleOKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(778) >= 0 then
+						world:SetWorldFlag(778,world:GetWorldFlag(778) + 30);
+						me:AddMsg("圭佑商会提醒您，本次存储中品灵石：30，  您当前可用余额为："..world:GetWorldFlag(778));
+					else
+						world:SetWorldFlag(778,0);
+						me:AddMsg("圭佑商会提醒您，本次存储中品灵石：30，  您当前可用余额为："..world:GetWorldFlag(778));
+					end
+					story:RemoveBindItem();
+					
+				]]>
+				</GlobleOKResult>
+		
+	</Story>
+
+	<Story Name="AF_CZLD14" Parent="BaseFillingStory">
+		<DisplayName>圭佑50中品灵石存款单</DisplayName>
+		<Desc>将50中品灵石存入银行。(无利息)</Desc>
+		<Kind>None</Kind>
+			<GlobleOKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(778) >= 0 then
+						world:SetWorldFlag(778,world:GetWorldFlag(778) + 50);
+						me:AddMsg("圭佑商会提醒您，本次存储中品灵石：50，  您当前可用余额为："..world:GetWorldFlag(778));
+					else
+						world:SetWorldFlag(778,0);
+						me:AddMsg("圭佑商会提醒您，本次存储中品灵石：50，  您当前可用余额为："..world:GetWorldFlag(778));
+					end
+					story:RemoveBindItem();
+					
+				]]>
+				</GlobleOKResult>
+		
+	</Story>
+
+	<Story Name="AF_CZLD15" Parent="BaseFillingStory">
+		<DisplayName>圭佑50下品灵石存款单</DisplayName>
+		<Desc>将50下品灵石存入银行。(无利息)</Desc>
+		<Kind>None</Kind>
+			<GlobleOKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(777) >= 0 then
+						world:SetWorldFlag(777,world:GetWorldFlag(777) + 50);
+						me:AddMsg("圭佑商会提醒您，本次存储下品灵石：50，  您当前可用余额为："..world:GetWorldFlag(777));
+					else
+						world:SetWorldFlag(777,0);
+						me:AddMsg("圭佑商会提醒您，本次存储下品灵石：50，  您当前可用余额为："..world:GetWorldFlag(777));
+					end
+					story:RemoveBindItem();
+					
+				]]>
+				</GlobleOKResult>
+		
+	</Story>
+
+	<Story Name="AF_CZLD16" Parent="BaseFillingStory">
+		<DisplayName>圭佑100下品灵石存款单</DisplayName>
+		<Desc>将100中品灵石存入银行。(无利息)</Desc>
+		<Kind>None</Kind>
+			<GlobleOKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(777) >= 0 then
+						world:SetWorldFlag(777,world:GetWorldFlag(777) + 100);
+						me:AddMsg("圭佑商会提醒您，本次存储下品灵石：100，  您当前可用余额为："..world:GetWorldFlag(777));
+					else
+						world:SetWorldFlag(777,0);
+						me:AddMsg("圭佑商会提醒您，本次存储下品灵石：100，  您当前可用余额为："..world:GetWorldFlag(777));
+					end
+					story:RemoveBindItem();
+					
+				]]>
+				</GlobleOKResult>
+		
+	</Story>
+
+	<Story Name="AF_CZLD17" Parent="BaseFillingStory">
+		<DisplayName>圭佑300下品灵石存款单</DisplayName>
+		<Desc>将300中品灵石存入银行。(无利息)</Desc>
+		<Kind>None</Kind>
+			<GlobleOKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(777) >= 0 then
+						world:SetWorldFlag(777,world:GetWorldFlag(777) + 300);
+						me:AddMsg("圭佑商会提醒您，本次存储下品灵石：300，  您当前可用余额为："..world:GetWorldFlag(777));
+					else
+						world:SetWorldFlag(777,0);
+						me:AddMsg("圭佑商会提醒您，本次存储下品灵石：300，  您当前可用余额为："..world:GetWorldFlag(777));
+					end
+					story:RemoveBindItem();
+					
+				]]>
+				</GlobleOKResult>
+		
+	</Story>
+	
+	<Story Name="AF_CZLD18" Parent="BaseFillingStory">
+		<DisplayName>300鹿蜀皮存票</DisplayName>
+		<Desc>将300鹿蜀皮存入银行。(需35中品灵石保管费!)。</Desc>
+		<Kind>None</Kind>
+			<GlobleOKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(900) >= 0 then
+						
+						world:SetWorldFlag(900,world:GetWorldFlag(900) + 300);
+						me:AddMsg("圭佑商会提醒您，本次存储鹿蜀皮：300，  您当前可用鹿蜀皮余额为："..world:GetWorldFlag(900));
+					else
+						world:SetWorldFlag(901,0);
+						me:AddMsg("圭佑商会提醒您，本次存储鹿蜀皮：300，  您当前可用鹿蜀皮余额为："..world:GetWorldFlag(900));
+					end
+					story:RemoveBindItem();
+					
+				]]>
+				</GlobleOKResult>
+		
+	</Story>
+	
+	<Story Name="AF_CZLD19" Parent="BaseFillingStory">
+		<DisplayName>50妖灵血存票</DisplayName>
+		<Desc>将50妖灵血存入银行。(需45中品灵石保管费!)。</Desc>
+		<Kind>None</Kind>
+			<GlobleOKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(901) >= 0 then
+						
+						world:SetWorldFlag(901,world:GetWorldFlag(901) + 50);
+						me:AddMsg("圭佑商会提醒您，本次存储妖灵血：50，  您当前可用妖灵血余额为："..world:GetWorldFlag(901));
+					else
+						world:SetWorldFlag(901,0);
+						me:AddMsg("圭佑商会提醒您，本次存储妖灵血：50，  您当前可用妖灵血余额为："..world:GetWorldFlag(901));
+					end
+					story:RemoveBindItem();
+					
+				]]>
+				</GlobleOKResult>
+		
+	</Story>
+	
+	<Story Name="AF_CZLD20" Parent="BaseFillingStory">
+		<DisplayName>300兵粮丸存票</DisplayName>
+		<Desc>将300兵粮丸存入银行。(需10中品灵石保管费!)。</Desc>
+		<Kind>None</Kind>
+			<GlobleOKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(902) >= 0 then
+						world:SetWorldFlag(902,world:GetWorldFlag(902) + 300);
+						me:AddMsg("圭佑商会提醒您，本次存储兵粮丸：300，  您当前可用兵粮丸余额为："..world:GetWorldFlag(902));
+					else
+						world:SetWorldFlag(900,0);
+						me:AddMsg("圭佑商会提醒您，本次存储兵粮丸：300，  您当前可用兵粮丸余额为："..world:GetWorldFlag(902));
+					end
+					story:RemoveBindItem();
+					
+				]]>
+				</GlobleOKResult>
+		
+	</Story>
+
+	<Story Name="Item_LingStonemidGiftget" Parent="BaseFillingStory">
+		<DisplayName>中品灵石礼盒</DisplayName>
+		<Desc>用中品灵石换来的小礼包233333。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>打开</Display>
+				<OKResult>
+				<![CDATA[	
+				story:RemoveBindItem();
+				local cR = me:RandomInt(1, 120);
+				if cR <= 1 then
+					me:AddMsg("[NAME]打开礼包，获得超级大奖龙鳞*3!!!");me:DropAwardItem("Item_DragonScale",3); 
+				elseif cR <= 3 then
+					me:AddMsg("[NAME]打开礼包，获得大奖上品灵石*1!!!。");me:DropAwardItem("Item_LingStonehig",1);
+				elseif cR <= 12 then
+					me:AddMsg("[NAME]打开礼包，请再接再厉。获得中品灵石*3!");me:DropAwardItem("Item_LingStonemid",3);
+				else
+					me:AddMsg("[NAME]打开礼包，加油再努力努力!获得下品品灵石*50。PS:头奖跟二等都不错唷!");me:DropAwardItem("Item_LingStonelow",50);
+				end
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+
+	<Story Name="Story_Item_midtguestboxget" Parent="BaseFillingStory">
+		<DisplayName>圭佑30中品灵石利息单神秘宝箱</DisplayName>
+		<Desc>神秘箱子有几率损失1半灵石，或多出一半灵石。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>打开</Display>
+				<OKResult>
+				<![CDATA[	
+				story:RemoveBindItem();
+				local cR = me:RandomInt(1, 60); 
+				if cR <= 15 then
+					me:AddMsg("[NAME]打开礼包，发现自己获得加倍利息!!!。");me:DropAwardItem("Item_LingStonemid",65);
+				else
+					me:AddMsg("[NAME]打开礼包，发现损失一半灵石。");me:DropAwardItem("Item_LingStonemid",16);
+				end
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+
+	<Story Name="Story_Item_midfguestboxget" Parent="BaseFillingStory">
+		<DisplayName>圭佑50中品灵石利息单神秘宝箱</DisplayName>
+		<Desc>神秘箱子有几率损失1半灵石，或多出一半灵石。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>打开</Display>
+				<OKResult>
+				<![CDATA[	
+				story:RemoveBindItem();
+				local cR = me:RandomInt(1, 60); 
+				if cR <= 15 then
+					me:AddMsg("[NAME]打开礼包，发现自己获得加倍利息!!!。");me:DropAwardItem("Item_LingStonemid",109);
+				else
+					me:AddMsg("[NAME]打开礼包，发现损失一半灵石。");me:DropAwardItem("Item_LingStonemid",27);
+				end
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+
+	<Story Name="Story_Item_higtguestboxget" Parent="BaseFillingStory">
+		<DisplayName>圭佑30上品灵石利息单神秘宝箱</DisplayName>
+		<Desc>神秘箱子有几率损失1半灵石，或多出一半灵石。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>打开</Display>
+				<OKResult>
+				<![CDATA[	
+				story:RemoveBindItem();
+				local cR = me:RandomInt(1, 60); 
+				if cR <= 15 then
+					me:AddMsg("[NAME]打开礼包，发现自己获得加倍利息!!!。");me:DropAwardItem("Item_LingStonehig",61);
+				else
+					me:AddMsg("[NAME]打开礼包，发现损失一半灵石。");me:DropAwardItem("Item_LingStonehig",15);
+				end
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+
+	<Story Name="Story_Item_higfguestboxget" Parent="BaseFillingStory">
+		<DisplayName>圭佑50上品灵石利息单神秘宝箱</DisplayName>
+		<Desc>神秘箱子有几率损失1半灵石，或多出一半灵石。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>打开</Display>
+				<OKResult>
+				<![CDATA[	
+				story:RemoveBindItem();
+				local cR = me:RandomInt(1, 60); 
+				if cR <= 15 then
+					me:AddMsg("[NAME]打开礼包，发现自己获得加倍利息!!!。");me:DropAwardItem("Item_LingStonehig",102);
+				else
+					me:AddMsg("[NAME]打开礼包，发现损失一半灵石。");me:DropAwardItem("Item_LingStonehig",25);
+				end
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+
+	<Story Name="Story_Item_randboxget" Parent="BaseFillingStory">
+		<DisplayName>神秘宝箱</DisplayName>
+		<Desc>神秘箱子里面不知道是什么。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>打开</Display>
+				<OKResult>
+				<![CDATA[	
+				story:RemoveBindItem();
+				local cR = me:RandomInt(1, 200); 
+				if cR <= 5 then
+					me:AddMsg("[NAME]鉴定结果为圭佑50上品灵石利息单神秘宝箱!!!。");me:DropAwardItem("Item_higfguestbox",1);
+				elseif cR <= 10 then
+					me:AddMsg("[NAME]鉴定结果为圭佑30上品灵石利息单神秘宝箱!!!。");me:DropAwardItem("Item_higtguestbox",1);
+				elseif cR <= 43 then
+					me:AddMsg("[NAME]鉴定结果为圭佑50中品灵石利息单神秘宝箱!!!。");me:DropAwardItem("Item_midfguestbox",1);
+				else
+					me:AddMsg("[NAME]鉴定结果为圭佑30中品灵石利息单神秘宝箱!!!。");me:DropAwardItem("Item_midtguestbox",1);
+				end
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+
+	<Story Name="Story_Item_purpleboxget" Parent="BaseFillingStory">
+		<DisplayName>紫布宝箱</DisplayName>
+		<Desc>100紫布=25下品。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>打开</Display>
+				<OKResult>
+				<![CDATA[	
+				story:RemoveBindItem();				
+				me:AddMsg("[NAME]打开礼包，获得25下品灵石。");me:DropAwardItem("Item_LingStonelow",25);
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="AF_ShopMain">
+		<DisplayName>圭佑银行终端</DisplayName>
+		<Desc>[NAME]使用银行终端终端，银行大厅里，人潮涌动，热闹繁忙.....</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>查询上中下灵石余额</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_higmidlow");					
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>贩卖部</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_shopitem");
+					if world:GetWorldFlag(780) > 0 then
+					world:SetWorldFlag(778,world:GetWorldFlag(778)+10);
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>仓库</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_shopsave");					
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>前往银行柜台</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_shop1");
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>离开</Display> 
+				<OKResult>me:AddMsg("[NAME]圭佑银行...。</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="AF_shopsave">
+		<DisplayName>仓库终端</DisplayName>
+		<Desc>[NAME]请问需要什麽服务?</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>查询</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(777) >= 0 then
+					
+						me:AddMsg("圭佑商会提示您，您当前鹿蜀皮余额为："..world:GetWorldFlag(900).." 		妖灵血余额为:"..world:GetWorldFlag(901).."      兵粮丸余额为："..world:GetWorldFlag(902));
+					else
+						me:AddMsg("圭佑商会提示您，您当前鹿蜀皮余额为："..world:GetWorldFlag(900).." 		妖灵血余额为:"..world:GetWorldFlag(901).."      兵粮丸余额为："..world:GetWorldFlag(902));
+						world:SetWorldFlag(777,0);world:SetWorldFlag(778,0);world:SetWorldFlag(779,0);world:SetWorldFlag(780,0);
+					end
+				]]>
+				<![CDATA[	
+					 me:TriggerStory("AF_ShopMain");
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>取出</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_shopsavetake");
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>返回上一层</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_ShopMain");
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="AF_shopsavetake">
+		<DisplayName>取出</DisplayName>
+		<Desc>[NAME]请问需要取出什么?</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>鹿蜀皮</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_ShopsavetakeLuShuLeather");
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>妖灵血</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_shopsavetakeMonsterBlood");
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>兵粮丸</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_shopsavetakeNoHunger1");
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>返回上一层</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_shopsave");
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+
+	<Story Name="AF_shop1">
+		<DisplayName>柜台终端</DisplayName>
+		<Desc>[NAME]请问需要什麽服务?</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>兑换</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_shopchangelingstone");
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>取款</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_shopgetlingstone");
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>返回上一层</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_ShopMain");
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>离开</Display> 
+				<OKResult>me:AddMsg("[NAME]圭佑银行...。</OKResult>
+			</li>
+		</Selections>
+	</Story>
+
+	<Story Name="AF_shopchangelingstone">
+		<DisplayName>兑换</DisplayName>
+		<Desc>[NAME]请问需要如何兑换?</Desc>
+		<Kind>None</Kind>
+		<Selections>						
+			<li>
+				<Display>换高阶灵石</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_shopchangelingstonehig");
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>换低阶灵石</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_shopchangelingstonelow");
+				]]>
+				</OKResult>
+			</li>			
+			<li>
+				<Display>返回上一层</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_shop1");
+				]]>
+				</OKResult>
+			</li>			
+		</Selections>
+	</Story>
+
+	<Story Name="AF_shopgetlingstone">
+		<DisplayName>取款</DisplayName>
+		<Desc>[NAME]请问需要取什麽灵石?</Desc>
+		<Kind>None</Kind>
+		<Selections>						
+			<li>
+				<Display>极品灵石</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_shopgetlingstonehiggest");
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>上品灵石</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_shopgetlingstonehig");
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>中品灵石</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_shopgetlingstonemid");
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>下品灵石</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_shopgetlingstonelow");
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>返回主选单</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_ShopMain");
+				]]>
+				</OKResult>
+			</li>			
+		</Selections>
+	</Story>	
+
+	<Story Name="AF_shopgetlingstonehiggest">
+		<DisplayName>极品灵石</DisplayName>
+		<Desc>[NAME]请问需要取多少极品灵石?</Desc>
+		<Kind>None</Kind>
+		<Selections>						
+			<li>
+				<Display>1</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(780) > 0 then
+						world:SetWorldFlag(780,world:GetWorldFlag(780)-1);
+				me:DropAwardItem("Item_LingStonehiggest",1);
+				me:AddMsg("圭佑商会提醒您，您当前可用极品灵石余额为：[color=#489429]"..world:GetWorldFlag(780));
+					    me:TriggerStory("AF_shopgetlingstone");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用极品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(780));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>3</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(780) > 2 then
+						world:SetWorldFlag(780,world:GetWorldFlag(780)-3);
+				me:DropAwardItem("Item_LingStonehiggest",3);
+				me:AddMsg("圭佑商会提醒您，您当前可用极品灵石余额为：[color=#489429]"..world:GetWorldFlag(780));
+					    me:TriggerStory("AF_shopgetlingstone");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用极品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(780));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>5</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(780) > 4 then
+						world:SetWorldFlag(780,world:GetWorldFlag(780)-5);
+				me:DropAwardItem("Item_LingStonehiggest",5);
+				me:AddMsg("圭佑商会提醒您，您当前可用极品灵石余额为：[color=#489429]"..world:GetWorldFlag(780));
+					    me:TriggerStory("AF_shopgetlingstone");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用极品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(780));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>10</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(780) > 9 then
+						world:SetWorldFlag(780,world:GetWorldFlag(780)-10);
+				me:DropAwardItem("Item_LingStonehiggest",10);
+				me:AddMsg("圭佑商会提醒您，您当前可用极品灵石余额为：[color=#489429]"..world:GetWorldFlag(780));
+					    me:TriggerStory("AF_shopgetlingstone");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用极品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(780));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>30</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(780) > 29 then
+						world:SetWorldFlag(780,world:GetWorldFlag(780)-30);
+				me:DropAwardItem("Item_LingStonehiggest",30);
+				me:AddMsg("圭佑商会提醒您，您当前可用极品灵石余额为：[color=#489429]"..world:GetWorldFlag(780));
+					    me:TriggerStory("AF_shopgetlingstone");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用极品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(780));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>50</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(780) > 49 then
+						world:SetWorldFlag(780,world:GetWorldFlag(780)-50);
+				me:DropAwardItem("Item_LingStonehiggest",50);
+				me:AddMsg("圭佑商会提醒您，您当前可用极品灵石余额为：[color=#489429]"..world:GetWorldFlag(780));
+					    me:TriggerStory("AF_shopgetlingstone");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用极品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(780));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>100</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(780) > 99 then
+						world:SetWorldFlag(780,world:GetWorldFlag(780)-100);
+				me:DropAwardItem("Item_LingStonehiggest",100);
+				me:AddMsg("圭佑商会提醒您，您当前可用极品灵石余额为：[color=#489429]"..world:GetWorldFlag(780));
+					    me:TriggerStory("AF_shopgetlingstone");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用极品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(780));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>返回上一层</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_shopgetlingstone");
+				]]>
+				</OKResult>
+			</li>			
+		</Selections>
+	</Story>	
+
+	<Story Name="AF_shopgetlingstonehig">
+		<DisplayName>上品灵石</DisplayName>
+		<Desc>[NAME]请问需要取多少上品灵石?</Desc>
+		<Kind>None</Kind>
+		<Selections>						
+			<li>
+				<Display>1</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(779) > 0 then
+						world:SetWorldFlag(779,world:GetWorldFlag(779)-1);
+				me:DropAwardItem("Item_LingStonehig",1);
+				me:AddMsg("圭佑商会提醒您，您当前可用上品灵石余额为：[color=#489429]"..world:GetWorldFlag(779));
+					    me:TriggerStory("AF_shopgetlingstone");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用上品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(779));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>3</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(779) > 2 then
+						world:SetWorldFlag(779,world:GetWorldFlag(779)-3);
+				me:DropAwardItem("Item_LingStonehig",3);
+				me:AddMsg("圭佑商会提醒您，您当前可用上品灵石余额为：[color=#489429]"..world:GetWorldFlag(779));
+					    me:TriggerStory("AF_shopgetlingstone");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用上品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(779));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>5</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(779) > 4 then
+						world:SetWorldFlag(779,world:GetWorldFlag(779)-5);
+				me:DropAwardItem("Item_LingStonehig",5);
+				me:AddMsg("圭佑商会提醒您，您当前可用上品灵石余额为：[color=#489429]"..world:GetWorldFlag(779));
+					    me:TriggerStory("AF_shopgetlingstone");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用上品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(779));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>10</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(779) > 9 then
+						world:SetWorldFlag(779,world:GetWorldFlag(779)-10);
+				me:DropAwardItem("Item_LingStonehig",10);
+				me:AddMsg("圭佑商会提醒您，您当前可用上品灵石余额为：[color=#489429]"..world:GetWorldFlag(779));
+					    me:TriggerStory("AF_shopgetlingstone");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用上品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(779));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>30</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(779) > 29 then
+						world:SetWorldFlag(779,world:GetWorldFlag(779)-30);
+				me:DropAwardItem("Item_LingStonehig",30);
+				me:AddMsg("圭佑商会提醒您，您当前可用上品灵石余额为：[color=#489429]"..world:GetWorldFlag(779));
+					    me:TriggerStory("AF_shopgetlingstone");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用上品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(779));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>50</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(779) > 49 then
+						world:SetWorldFlag(779,world:GetWorldFlag(779)-50);
+				me:DropAwardItem("Item_LingStonehig",50);
+				me:AddMsg("圭佑商会提醒您，您当前可用上品灵石余额为：[color=#489429]"..world:GetWorldFlag(779));
+					    me:TriggerStory("AF_shopgetlingstone");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用上品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(779));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>100</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(779) > 99 then
+						world:SetWorldFlag(779,world:GetWorldFlag(779)-100);
+				me:DropAwardItem("Item_LingStonehig",100);
+				me:AddMsg("圭佑商会提醒您，您当前可用上品灵石余额为：[color=#489429]"..world:GetWorldFlag(779));
+					    me:TriggerStory("AF_shopgetlingstone");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用上品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(779));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>300</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(779) > 299 then
+						world:SetWorldFlag(779,world:GetWorldFlag(779)-300);
+				me:DropAwardItem("Item_LingStonehig",300);
+				me:AddMsg("圭佑商会提醒您，您当前可用上品灵石余额为：[color=#489429]"..world:GetWorldFlag(779));
+					    me:TriggerStory("AF_shopgetlingstone");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用上品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(779));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>500</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(779) > 499 then
+						world:SetWorldFlag(779,world:GetWorldFlag(779)-500);
+				me:DropAwardItem("Item_LingStonehig",500);
+				me:AddMsg("圭佑商会提醒您，您当前可用上品灵石余额为：[color=#489429]"..world:GetWorldFlag(779));
+					    me:TriggerStory("AF_shopgetlingstone");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用上品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(779));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>1000</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(779) > 999 then
+						world:SetWorldFlag(779,world:GetWorldFlag(779)-1000);
+				me:DropAwardItem("Item_LingStonehig",1000);
+				me:AddMsg("圭佑商会提醒您，您当前可用上品灵石余额为：[color=#489429]"..world:GetWorldFlag(779));
+					    me:TriggerStory("AF_shopgetlingstone");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用上品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(779));
+					end
+				]]>
+				</OKResult>
+			</li>			
+			<li>
+				<Display>返回上一层</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_shopgetlingstone");
+				]]>
+				</OKResult>
+			</li>			
+		</Selections>
+	</Story>
+
+	<Story Name="AF_shopgetlingstonemid">
+		<DisplayName>中品灵石</DisplayName>
+		<Desc>[NAME]请问需要取多少中品灵石?</Desc>
+		<Kind>None</Kind>
+		<Selections>						
+			<li>
+				<Display>1</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(778) > 0 then
+						world:SetWorldFlag(778,world:GetWorldFlag(778)-1);
+				me:DropAwardItem("Item_LingStonemid",1);
+				me:AddMsg("圭佑商会提醒您，您当前可用中品灵石余额为：[color=#489429]"..world:GetWorldFlag(778));
+					    me:TriggerStory("AF_shopgetlingstone");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用中品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(778));
+					end
+				]]>
+				</OKResult>
+			</li>			
+			<li>
+				<Display>5</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(778) > 4 then
+						world:SetWorldFlag(778,world:GetWorldFlag(778)-5);
+				me:DropAwardItem("Item_LingStonemid",5);
+				me:AddMsg("圭佑商会提醒您，您当前可用中品灵石余额为：[color=#489429]"..world:GetWorldFlag(778));
+					    me:TriggerStory("AF_shopgetlingstone");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用中品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(778));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>10</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(778) > 9 then
+						world:SetWorldFlag(778,world:GetWorldFlag(778)-10);
+				me:DropAwardItem("Item_LingStonemid",10);
+				me:AddMsg("圭佑商会提醒您，您当前可用中品灵石余额为：[color=#489429]"..world:GetWorldFlag(778));
+					    me:TriggerStory("AF_shopgetlingstone");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用中品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(778));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>30</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(778) > 29 then
+						world:SetWorldFlag(778,world:GetWorldFlag(778)-30);
+				me:DropAwardItem("Item_LingStonemid",30);
+				me:AddMsg("圭佑商会提醒您，您当前可用中品灵石余额为：[color=#489429]"..world:GetWorldFlag(778));
+					    me:TriggerStory("AF_shopgetlingstone");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用中品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(778));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>50</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(778) > 49 then
+						world:SetWorldFlag(778,world:GetWorldFlag(778)-50);
+				me:DropAwardItem("Item_LingStonemid",50);
+				me:AddMsg("圭佑商会提醒您，您当前可用中品灵石余额为：[color=#489429]"..world:GetWorldFlag(778));
+					    me:TriggerStory("AF_shopgetlingstone");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用中品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(778));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>100</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(778) > 99 then
+						world:SetWorldFlag(778,world:GetWorldFlag(778)-100);
+				me:DropAwardItem("Item_LingStonemid",100);
+				me:AddMsg("圭佑商会提醒您，您当前可用中品灵石余额为：[color=#489429]"..world:GetWorldFlag(778));
+					    me:TriggerStory("AF_shopgetlingstone");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用中品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(778));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>300</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(778) > 299 then
+						world:SetWorldFlag(778,world:GetWorldFlag(778)-300);
+				me:DropAwardItem("Item_LingStonemid",300);
+				me:AddMsg("圭佑商会提醒您，您当前可用中品灵石余额为：[color=#489429]"..world:GetWorldFlag(778));
+					    me:TriggerStory("AF_shopgetlingstone");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用中品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(778));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>500</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(778) > 499 then
+						world:SetWorldFlag(778,world:GetWorldFlag(778)-500);
+				me:DropAwardItem("Item_LingStonemid",500);
+				me:AddMsg("圭佑商会提醒您，您当前可用中品灵石余额为：[color=#489429]"..world:GetWorldFlag(778));
+					    me:TriggerStory("AF_shopgetlingstone");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用中品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(778));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>1000</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(778) > 999 then
+						world:SetWorldFlag(778,world:GetWorldFlag(778)-1000);
+				me:DropAwardItem("Item_LingStonemid",1000);
+				me:AddMsg("圭佑商会提醒您，您当前可用中品灵石余额为：[color=#489429]"..world:GetWorldFlag(778));
+					    me:TriggerStory("AF_shopgetlingstone");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用中品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(778));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>3000</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(778) > 2999 then
+						world:SetWorldFlag(778,world:GetWorldFlag(778)-3000);
+				me:DropAwardItem("Item_LingStonemid",3000);
+				me:AddMsg("圭佑商会提醒您，您当前可用中品灵石余额为：[color=#489429]"..world:GetWorldFlag(778));
+					    me:TriggerStory("AF_shopgetlingstone");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用中品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(778));
+					end
+				]]>
+				</OKResult>
+			</li>			
+			<li>
+				<Display>返回上一层</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_shopgetlingstone");
+				]]>
+				</OKResult>
+			</li>			
+		</Selections>
+	</Story>
+
+	<Story Name="AF_shopgetlingstonelow">
+		<DisplayName>下品灵石</DisplayName>
+		<Desc>[NAME]请问需要取多少下品灵石?</Desc>
+		<Kind>None</Kind>
+		<Selections>			
+			<li>
+				<Display>30</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(777) > 29 then
+						world:SetWorldFlag(777,world:GetWorldFlag(777)-30);
+				me:DropAwardItem("Item_LingStonelow",30);
+				me:AddMsg("圭佑商会提醒您，您当前可用下品灵石余额为：[color=#489429]"..world:GetWorldFlag(777));
+					    me:TriggerStory("AF_shopgetlingstone");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用下品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(777));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>50</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(777) > 49 then
+						world:SetWorldFlag(777,world:GetWorldFlag(777)-50);
+				me:DropAwardItem("Item_LingStonelow",50);
+				me:AddMsg("圭佑商会提醒您，您当前可用下品灵石余额为：[color=#489429]"..world:GetWorldFlag(777));
+					    me:TriggerStory("AF_shopgetlingstone");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用下品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(777));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>100</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(777) > 99 then
+						world:SetWorldFlag(777,world:GetWorldFlag(777)-100);
+				me:DropAwardItem("Item_LingStonelow",100);
+				me:AddMsg("圭佑商会提醒您，您当前可用下品灵石余额为：[color=#489429]"..world:GetWorldFlag(777));
+					    me:TriggerStory("AF_shopgetlingstone");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用下品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(777));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>300</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(777) > 299 then
+						world:SetWorldFlag(777,world:GetWorldFlag(777)-300);
+				me:DropAwardItem("Item_LingStonelow",300);
+				me:AddMsg("圭佑商会提醒您，您当前可用下品灵石余额为：[color=#489429]"..world:GetWorldFlag(777));
+					    me:TriggerStory("AF_shopgetlingstone");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用下品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(777));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>500</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(777) > 499 then
+						world:SetWorldFlag(777,world:GetWorldFlag(777)-500);
+				me:DropAwardItem("Item_LingStonelow",500);
+				me:AddMsg("圭佑商会提醒您，您当前可用下品灵石余额为：[color=#489429]"..world:GetWorldFlag(777));
+					    me:TriggerStory("AF_shopgetlingstone");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用下品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(777));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>1000</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(777) > 999 then
+						world:SetWorldFlag(777,world:GetWorldFlag(777)-1000);
+				me:DropAwardItem("Item_LingStonelow",1000);
+				me:AddMsg("圭佑商会提醒您，您当前可用下品灵石余额为：[color=#489429]"..world:GetWorldFlag(777));
+					    me:TriggerStory("AF_shopgetlingstone");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用下品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(777));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>3000</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(777) > 2999 then
+						world:SetWorldFlag(777,world:GetWorldFlag(777)-3000);
+				me:DropAwardItem("Item_LingStonelow",3000);
+				me:AddMsg("圭佑商会提醒您，您当前可用下品灵石余额为：[color=#489429]"..world:GetWorldFlag(777));
+					    me:TriggerStory("AF_shopgetlingstone");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用下品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(777));
+					end
+				]]>
+				</OKResult>
+			</li>			
+			<li>
+				<Display>返回上一层</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_shopgetlingstone");
+				]]>
+				</OKResult>
+			</li>			
+		</Selections>
+	</Story>
+
+	<Story Name="AF_higmidlow">
+		<DisplayName>查询上中下灵石余额</DisplayName>
+		<Desc>[NAME]尊敬的圭佑商会员您好，为您查询到的资讯如下:</Desc>
+		<Kind>None</Kind>
+		<GlobleOKResult>
+		
+				<![CDATA[	
+					if world:GetWorldFlag(777) >= 0 then
+					
+						me:AddMsg("圭佑商会提示您，您当前可用下品灵石余额为："..world:GetWorldFlag(777).." 		中品灵石余额为:"..world:GetWorldFlag(778).."      上品灵石余额为："..world:GetWorldFlag(779).."     极品灵石余额为："..world:GetWorldFlag(780));
+					else
+						me:AddMsg("圭佑商会提示您，您当前可用下品灵石余额为："..world:GetWorldFlag(777).."      中品灵石余额为:"..world:GetWorldFlag(778).."      上品灵石余额为："..world:GetWorldFlag(779).."     极品灵石余额为："..world:GetWorldFlag(780));
+						world:SetWorldFlag(777,0);world:SetWorldFlag(778,0);world:SetWorldFlag(779,0);world:SetWorldFlag(780,0);
+					end
+				]]>
+				<![CDATA[	
+					 me:TriggerStory("AF_ShopMain");
+				]]>
+		</GlobleOKResult>
+	</Story>
+
+	<Story Name="AF_shopitem">
+		<DisplayName>贩卖部</DisplayName>
+		<Desc>[NAME]请问你要购买什么商品呢?</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>补元丹(加强版)</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_bucircledan");
+				]]>
+				</OKResult>
+			</li>			
+			<li>
+				<Display>返回主选单</Display> 
+				<OKResult>
+					<![CDATA[	
+					me:TriggerStory("AF_ShopMain");
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+
+	<Story Name="AF_bucircledan">
+		<DisplayName>补元丹(加强版)</DisplayName>
+		<Desc>[NAME]请问你要购买几颗呢?</Desc>
+		<Kind>None</Kind>
+		<Selections>						
+			<li>
+				<Display>1</Display>
+					<Tip>需上品灵石(>3)，要价3上品灵石</Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(779) > 2 then
+						world:SetWorldFlag(779,world:GetWorldFlag(779)-3);
+						world:SetWorldFlag(777,world:GetWorldFlag(777)+30);
+				me:DropAwardItem("Item_bucircledan",1);
+				me:AddMsg("圭佑商会提醒您，您当前可用上品灵石余额为：[color=#489429]"..world:GetWorldFlag(779));
+					    me:TriggerStory("AF_shopitem");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用上品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(779));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>3</Display>
+					<Tip>需上品灵石(>9)，要价9上品灵石</Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(779) > 8 then
+						world:SetWorldFlag(779,world:GetWorldFlag(779)-9);
+						world:SetWorldFlag(777,world:GetWorldFlag(777)+90);
+				me:DropAwardItem("Item_bucircledan",3);
+				me:AddMsg("圭佑商会提醒您，您当前可用上品灵石余额为：[color=#489429]"..world:GetWorldFlag(779));
+					    me:TriggerStory("AF_shopitem");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用上品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(779));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>5</Display>
+					<Tip>需上品灵石(>15)，要价15上品灵石</Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(779) > 14 then
+						world:SetWorldFlag(779,world:GetWorldFlag(779)-15);
+						world:SetWorldFlag(778,world:GetWorldFlag(778)+1);
+						world:SetWorldFlag(777,world:GetWorldFlag(777)+50);
+				me:DropAwardItem("Item_bucircledan",5);
+				me:AddMsg("圭佑商会提醒您，您当前可用上品灵石余额为：[color=#489429]"..world:GetWorldFlag(779));
+					    me:TriggerStory("AF_shopitem");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用上品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(779));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>10</Display>
+					<Tip>需上品灵石(>30)，要价30上品灵石</Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(779) > 29 then
+						world:SetWorldFlag(779,world:GetWorldFlag(779)-30);
+						world:SetWorldFlag(778,world:GetWorldFlag(778)+3);
+				me:DropAwardItem("Item_bucircledan",10);
+				me:AddMsg("圭佑商会提醒您，您当前可用上品灵石余额为：[color=#489429]"..world:GetWorldFlag(779));
+					    me:TriggerStory("AF_shopitem");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用上品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(779));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>30</Display>
+					<Tip>需上品灵石(>90)，要价90上品灵石</Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(779) > 89 then
+						world:SetWorldFlag(779,world:GetWorldFlag(779)-90);
+						world:SetWorldFlag(778,world:GetWorldFlag(778)+9);
+				me:DropAwardItem("Item_bucircledan",30);
+				me:AddMsg("圭佑商会提醒您，您当前可用上品灵石余额为：[color=#489429]"..world:GetWorldFlag(779));
+					    me:TriggerStory("AF_shopitem");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用上品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(779));
+					end
+				]]>
+				</OKResult>
+			</li>							
+			<li>
+				<Display>返回上一层</Display> 
+				<OKResult>
+					<![CDATA[	
+					me:TriggerStory("AF_shopitem");
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="AF_shopchangelingstonehig">
+		<DisplayName>兑换高阶灵石</DisplayName>
+		<Desc>[NAME]请问需要如何兑换?</Desc>
+		<Kind>None</Kind>
+		<Selections>						
+			<li>
+				<Display>下品灵石换中品灵石</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_changelingstonelowtomid");
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>中品灵石换上品灵石</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_changelingstonemidtohig");
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>上品灵石换极品灵石</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_changelingstonehigtohiggest");
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>返回上一层</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_shopchangelingstone");
+				]]>
+				</OKResult>
+			</li>			
+		</Selections>
+	</Story>
+	
+	<Story Name="AF_changelingstonelowtomid">
+		<DisplayName>下品灵石换中品灵石</DisplayName>
+		<Desc>[NAME]100下品=1中品。</Desc>
+		<Kind>None</Kind>
+		<Selections>						
+			<li>
+				<Display>1中品</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(777) > 99 then
+						world:SetWorldFlag(777,world:GetWorldFlag(777)-100);
+						world:SetWorldFlag(778,world:GetWorldFlag(778)+1);
+					    me:TriggerStory("AF_higmidlow");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用下品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(777));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>5中品</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(777) > 499 then
+						world:SetWorldFlag(777,world:GetWorldFlag(777)-500);
+						world:SetWorldFlag(778,world:GetWorldFlag(778)+5);
+					    me:TriggerStory("AF_higmidlow");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用下品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(777));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>10中品</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(777) > 999 then
+						world:SetWorldFlag(777,world:GetWorldFlag(777)-1000);
+						world:SetWorldFlag(778,world:GetWorldFlag(778)+10);
+					    me:TriggerStory("AF_higmidlow");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用下品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(777));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>返回上一层</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_shopchangelingstone");
+				]]>
+				</OKResult>
+			</li>			
+		</Selections>
+	</Story>
+	
+	<Story Name="AF_changelingstonemidtohig">
+		<DisplayName>中品灵石换上品灵石</DisplayName>
+		<Desc>[NAME]100中品=1上品。</Desc>
+		<Kind>None</Kind>
+		<Selections>						
+			<li>
+				<Display>1上品</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(778) > 99 then
+						world:SetWorldFlag(778,world:GetWorldFlag(778)-100);
+						world:SetWorldFlag(779,world:GetWorldFlag(779)+1);
+					    me:TriggerStory("AF_higmidlow");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用中品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(778));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>5上品</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(778) > 499 then
+						world:SetWorldFlag(778,world:GetWorldFlag(778)-500);
+						world:SetWorldFlag(779,world:GetWorldFlag(779)+5);
+					    me:TriggerStory("AF_higmidlow");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用中品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(778));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>10上品</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(778) > 999 then
+						world:SetWorldFlag(778,world:GetWorldFlag(778)-1000);
+						world:SetWorldFlag(779,world:GetWorldFlag(779)+10);
+					    me:TriggerStory("AF_higmidlow");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用中品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(778));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>30上品</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(778) > 2999 then
+						world:SetWorldFlag(778,world:GetWorldFlag(778)-3000);
+						world:SetWorldFlag(779,world:GetWorldFlag(779)+30);
+					    me:TriggerStory("AF_higmidlow");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用中品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(778));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>返回上一层</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_shopchangelingstone");
+				]]>
+				</OKResult>
+			</li>			
+		</Selections>
+	</Story>
+	
+	<Story Name="AF_changelingstonehigtohiggest">
+		<DisplayName>上品灵石换极品灵石</DisplayName>
+		<Desc>[NAME]100上品=1极品。</Desc>
+		<Kind>None</Kind>
+		<Selections>						
+			<li>
+				<Display>1极品</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(779) > 99 then
+						world:SetWorldFlag(779,world:GetWorldFlag(779)-100);
+						world:SetWorldFlag(780,world:GetWorldFlag(780)+1);
+					    me:TriggerStory("AF_higmidlow");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用中品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(779));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>5极品</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(779) > 499 then
+						world:SetWorldFlag(779,world:GetWorldFlag(779)-500);
+						world:SetWorldFlag(780,world:GetWorldFlag(780)+5);
+					    me:TriggerStory("AF_higmidlow");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用中品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(779));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>10极品</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(779) > 999 then
+						world:SetWorldFlag(779,world:GetWorldFlag(779)-1000);
+						world:SetWorldFlag(780,world:GetWorldFlag(780)+10);
+					    me:TriggerStory("AF_higmidlow");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用中品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(779));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>返回上一层</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_shopchangelingstone");
+				]]>
+				</OKResult>
+			</li>			
+		</Selections>
+	</Story>
+	
+	<Story Name="AF_shopchangelingstonelow">
+		<DisplayName>兑换低阶灵石</DisplayName>
+		<Desc>[NAME]请问需要如何兑换?</Desc>
+		<Kind>None</Kind>
+		<Selections>						
+			<li>
+				<Display>极品灵石换上品灵石</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_changelingstonehiggesttohig");
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>上品灵石换中品灵石</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_changelingstonehigtomid");
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>中品灵石换下品灵石</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_changelingstonemidtolow");
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>中品灵石换灵晶</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_changelingstonemidtoLingCrystal");
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>下品灵石换灵石</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_changelingstonelowtoLingStone");
+				]]>
+				</OKResult>
+			</li>			
+			<li>
+				<Display>返回上一层</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_shopchangelingstone");
+				]]>
+				</OKResult>
+			</li>			
+		</Selections>
+	</Story>
+	
+	<Story Name="AF_changelingstonehiggesttohig">
+		<DisplayName>极品灵石换上品灵石</DisplayName>
+		<Desc>[NAME]1极品=100上品。</Desc>
+		<Kind>None</Kind>
+		<Selections>						
+			<li>
+				<Display>100上品</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(780) > 0 then
+						world:SetWorldFlag(780,world:GetWorldFlag(780)-1);
+						world:SetWorldFlag(779,world:GetWorldFlag(779)+100);
+					    me:TriggerStory("AF_higmidlow");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用中品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(780));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>300上品</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(780) > 2 then
+						world:SetWorldFlag(780,world:GetWorldFlag(780)-3);
+						world:SetWorldFlag(779,world:GetWorldFlag(779)+300);
+					    me:TriggerStory("AF_higmidlow");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用中品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(780));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>返回上一层</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_shopchangelingstone");
+				]]>
+				</OKResult>
+			</li>			
+		</Selections>
+	</Story>
+	
+	<Story Name="AF_changelingstonehigtomid">
+		<DisplayName>上品灵石换中品灵石</DisplayName>
+		<Desc>[NAME]1上品=100中品。</Desc>
+		<Kind>None</Kind>
+		<Selections>						
+			<li>
+				<Display>100中品</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(779) > 0 then
+						world:SetWorldFlag(779,world:GetWorldFlag(779)-1);
+						world:SetWorldFlag(778,world:GetWorldFlag(778)+100);
+					    me:TriggerStory("AF_higmidlow");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用中品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(779));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>300中品</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(779) > 2 then
+						world:SetWorldFlag(779,world:GetWorldFlag(779)-3);
+						world:SetWorldFlag(778,world:GetWorldFlag(778)+300);
+					    me:TriggerStory("AF_higmidlow");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用中品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(779));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>返回上一层</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_shopchangelingstone");
+				]]>
+				</OKResult>
+			</li>			
+		</Selections>
+	</Story>
+	
+	<Story Name="AF_changelingstonemidtolow">
+		<DisplayName>中品灵石换下品灵石</DisplayName>
+		<Desc>[NAME]1中品=100下品。</Desc>
+		<Kind>None</Kind>
+		<Selections>						
+			<li>
+				<Display>100下品</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(778) > 0 then
+						world:SetWorldFlag(778,world:GetWorldFlag(778)-1);
+						world:SetWorldFlag(777,world:GetWorldFlag(777)+100);
+					    me:TriggerStory("AF_higmidlow");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用中品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(778));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>300下品</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(778) > 2 then
+						world:SetWorldFlag(778,world:GetWorldFlag(778)-3);
+						world:SetWorldFlag(777,world:GetWorldFlag(777)+300);
+					    me:TriggerStory("AF_higmidlow");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用中品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(778));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>返回上一层</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_shopchangelingstone");
+				]]>
+				</OKResult>
+			</li>			
+		</Selections>
+	</Story>
+	
+	<Story Name="AF_changelingstonemidtoLingCrystal">
+		<DisplayName>中品灵石换灵晶</DisplayName>
+		<Desc>[NAME]1中品=10灵晶。</Desc>
+		<Kind>None</Kind>
+		<Selections>						
+			<li>
+				<Display>10灵晶</Display>
+					<Tip></Tip>
+				<OKResult>				
+				<![CDATA[	
+					if world:GetWorldFlag(778) > 0 then
+						world:SetWorldFlag(778,world:GetWorldFlag(778)-1);
+						me:DropAwardItem("Item_LingCrystal",10);
+					    me:TriggerStory("AF_higmidlow");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用中品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(778));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>30灵晶</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(778) > 2 then
+						world:SetWorldFlag(778,world:GetWorldFlag(778)-3);
+						me:DropAwardItem("Item_LingCrystal",30);
+					    me:TriggerStory("AF_higmidlow");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用中品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(778));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>50灵晶</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(778) > 4 then
+						world:SetWorldFlag(778,world:GetWorldFlag(778)-5);
+						me:DropAwardItem("Item_LingCrystal",50);
+					    me:TriggerStory("AF_higmidlow");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用中品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(778));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>返回上一层</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_shopchangelingstone");
+				]]>
+				</OKResult>
+			</li>			
+		</Selections>
+	</Story>
+	
+	<Story Name="AF_changelingstonelowtoLingStone">
+		<DisplayName>下品灵石换灵石</DisplayName>
+		<Desc>[NAME]1下品=10灵石。</Desc>
+		<Kind>None</Kind>
+		<Selections>						
+			<li>
+				<Display>100灵石</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(777) > 9 then
+						world:SetWorldFlag(777,world:GetWorldFlag(777)-10);
+						me:DropAwardItem("Item_LingStone",100);
+					    me:TriggerStory("AF_higmidlow");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用中品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(777));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>300灵石</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(777) > 29 then
+						world:SetWorldFlag(777,world:GetWorldFlag(777)-30);
+						me:DropAwardItem("Item_LingStone",300);
+					    me:TriggerStory("AF_higmidlow");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用中品灵石余额不足。余额为：[color=#489429]"..world:GetWorldFlag(777));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>返回上一层</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_shopchangelingstone");
+				]]>
+				</OKResult>
+			</li>			
+		</Selections>
+	</Story>
+	
+	<Story Name="AF_ShopsavetakeLuShuLeather">
+		<DisplayName>鹿蜀皮兑换</DisplayName>
+		<Desc>[NAME]请选择数量。</Desc>
+		<Kind>None</Kind>
+		<Selections>						
+			<li>
+				<Display>50</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(900) > 49 then
+						world:SetWorldFlag(900,world:GetWorldFlag(900)-50);
+						me:DropAwardItem("Item_LuShuLeather",50);
+					    me:TriggerStory("AF_Shopsavetake");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用鹿蜀皮不足。余额为：[color=#489429]"..world:GetWorldFlag(900));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>100</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(900) > 99 then
+						world:SetWorldFlag(900,world:GetWorldFlag(900)-100);
+						me:DropAwardItem("Item_LuShuLeather",100);
+					    me:TriggerStory("AF_Shopsavetake");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用鹿蜀皮不足。余额为：[color=#489429]"..world:GetWorldFlag(900));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>返回上一层</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_shopchangelingstone");
+				]]>
+				</OKResult>
+			</li>			
+		</Selections>
+	</Story>
+	
+	<Story Name="AF_shopsavetakeMonsterBlood">
+		<DisplayName>妖灵血兑换</DisplayName>
+		<Desc>[NAME]请选择数量。</Desc>
+		<Kind>None</Kind>
+		<Selections>						
+			<li>
+				<Display>50</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(901) > 49 then
+						world:SetWorldFlag(901,world:GetWorldFlag(901)-50);
+						me:DropAwardItem("Item_MonsterBlood",50);
+					    me:TriggerStory("AF_Shopsavetake");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用妖灵血不足。余额为：[color=#489429]"..world:GetWorldFlag(901));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>100</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(901) > 99 then
+						world:SetWorldFlag(901,world:GetWorldFlag(901)-100);
+						me:DropAwardItem("Item_MonsterBlood",100);
+					    me:TriggerStory("AF_Shopsavetake");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用妖灵血不足。余额为：[color=#489429]"..world:GetWorldFlag(901));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>返回上一层</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_shopchangelingstone");
+				]]>
+				</OKResult>
+			</li>			
+		</Selections>
+	</Story>
+	
+	<Story Name="AF_shopsavetakeNoHunger1">
+		<DisplayName>兵粮丸</DisplayName>
+		<Desc>[NAME]请选择数量。</Desc>
+		<Kind>None</Kind>
+		<Selections>						
+			<li>
+				<Display>50</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(902) > 49 then
+						world:SetWorldFlag(902,world:GetWorldFlag(902)-50);
+						me:DropAwardItem("Item_Dan_NoHunger1",50);
+					    me:TriggerStory("AF_Shopsavetake");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用兵粮丸不足。余额为：[color=#489429]"..world:GetWorldFlag(902));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>100</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					if world:GetWorldFlag(902) > 99 then
+						world:SetWorldFlag(902,world:GetWorldFlag(902)-100);
+						me:DropAwardItem("Item_Dan_NoHunger1",100);
+					    me:TriggerStory("AF_Shopsavetake");
+					else
+						me:AddMsg("圭佑商会提醒您，您当前可用兵粮丸不足。余额为：[color=#489429]"..world:GetWorldFlag(902));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>返回上一层</Display>
+					<Tip></Tip>
+				<OKResult>
+				<![CDATA[	
+					me:TriggerStory("AF_shopchangelingstone");
+				]]>
+				</OKResult>
+			</li>			
+		</Selections>
+	</Story>
+	
+</List></Stories>

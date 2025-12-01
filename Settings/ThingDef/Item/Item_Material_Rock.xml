@@ -1,0 +1,889 @@
+﻿<ThingDefs><List>
+
+<ThingDef Type="Item" Name="RockBase" Parent="MaterialBase">
+	
+	<Tags>
+	</Tags>
+	
+	<TexPath>Item/BrownRock</TexPath>
+	<Desc>Desc.</Desc>
+	<MaxStack>5000</MaxStack>
+	<Beauty>2</Beauty>
+	<MaxHitPoints>600</MaxHitPoints>
+	<Rate>1</Rate>
+	<ElementKind>Tu</ElementKind>
+	
+	<Flammability>
+		<Flammability>0.1</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>900</BurningPoint>
+	</Flammability>
+	
+	<Item Lable="Rock">
+		<FabaoSuffix>石,印,碑,珏,圭,阙,镇</FabaoSuffix>
+		<PhysicalLables>
+			<li>Heavy1</li>
+			<li>Hard1</li>
+			<li>Rough2</li>
+		</PhysicalLables>
+		 
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+			
+			<RateWhenBeMain>2</RateWhenBeMain>
+			<WorkSpeedCoefficientWhenBeMain>1</WorkSpeedCoefficientWhenBeMain>
+			
+			<SharpDamageMultiplier>1</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1</BluntDamageMultiplier>
+			<LingDamageMultiplier>1</LingDamageMultiplier>
+			<AttackSpeedWhenBeMain>0.2</AttackSpeedWhenBeMain>
+			
+			<SharpDefenceMultiplier>1</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>1</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>1</LingDefenceMultiplier>
+			<ColdInsulationMultiplier>1</ColdInsulationMultiplier>
+			<HeatInsulationMultiplier>1</HeatInsulationMultiplier>
+			
+			<MaxHitPointsPerNum>10</MaxHitPointsPerNum>
+			<LingNumberRate>0.3</LingNumberRate>
+			
+			<BurningPointWhenBeMain>900</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0.1</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>-3</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>1</ElementPowerWhenBeMain>
+			
+			<WorktoMakeRate>1.2</WorktoMakeRate>
+			<WorktoBuildRate>1.5</WorktoBuildRate>
+		</BeMaterial>
+		
+		<!--<Rot>
+			<RotSpeed>0.00005</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>10</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>-->
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.2</Absorption>
+		<Accommodate>4</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Tu</Kind>
+		<Value>1</Value>         
+		<Radius>1</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_LingStonelow" Parent="RockBase">
+	<TexPath>res\Sprs\object\object_lingshi01</TexPath>
+	<ThingName>下品灵石</ThingName>	
+	<Desc>灵气高度凝聚而成的固体，可以服用恢复1500点灵气，并在一段时间增强对灵气的亲和。</Desc>
+	<Rate>6</Rate>
+	<Beauty>10</Beauty>
+	<NoElementKind>1</NoElementKind>
+	<ElementKind>None</ElementKind>
+	<Item Lable="LingStone">
+		<PhysicalLables>
+			<li>Heavy1</li>
+			<li>Hard1</li>
+		</PhysicalLables>
+		<BeMaterial>
+				<NamePrefix>灵石</NamePrefix>
+				<CostMultiplier>1</CostMultiplier>
+				
+				<RateWhenBeMain>6</RateWhenBeMain>
+				<WorkSpeedCoefficientWhenBeMain>1.4</WorkSpeedCoefficientWhenBeMain>
+			
+				<BeautyWhenBeMain>8</BeautyWhenBeMain>
+				<ElementPowerWhenBeMain>0</ElementPowerWhenBeMain>
+		</BeMaterial>
+		<Elixir>
+			<Ling>1500</Ling>
+			<Modifier>Dan_LingStone</Modifier>
+		</Elixir>
+	</Item>
+	<Ling>
+		<AddionLing>30</AddionLing>
+		<AddionRadius>2</AddionRadius>
+		<AddionFailing>0.4</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0</Attenuation>
+		<Absorption>0</Absorption>
+		<Accommodate>0</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>None</Kind>
+		<Value>0</Value>         
+		<Radius>1</Radius>
+		<Failing>0</Failing>
+		<FailRadius>0</FailRadius>
+	</Element>
+	
+	<Light>
+		<Value>30</Value>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>2</Radius>
+		<Color>358BA7FF</Color>
+	</Light>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_LingStonemid" Parent="RockBase">
+	<TexPath>res\Sprs\object\object_lingshi01</TexPath>
+	<ThingName>中品灵石</ThingName>	
+	<Desc>灵气高度凝聚而成的固体，可以服用恢复10000点灵气，并在一段时间增强对灵气的亲和，汇率100下品=1中品。</Desc>
+	<Rate>8</Rate>
+	<Beauty>10</Beauty>
+	<NoElementKind>1</NoElementKind>
+	<ElementKind>None</ElementKind>
+	<Item Lable="LingStone">
+		<PhysicalLables>
+			<li>Heavy1</li>
+			<li>Hard1</li>
+		</PhysicalLables>
+		<BeMaterial>
+				<NamePrefix>灵石</NamePrefix>
+				<CostMultiplier>1</CostMultiplier>
+				
+				<RateWhenBeMain>6</RateWhenBeMain>
+				<WorkSpeedCoefficientWhenBeMain>1.4</WorkSpeedCoefficientWhenBeMain>
+			
+				<BeautyWhenBeMain>8</BeautyWhenBeMain>
+				<ElementPowerWhenBeMain>0</ElementPowerWhenBeMain>
+		</BeMaterial>
+		<Elixir>
+			<Ling>10000</Ling>
+			<Modifier>Dan_LingStone</Modifier>
+		</Elixir>		
+	</Item>
+	<Ling>
+		<AddionLing>40</AddionLing>
+		<AddionRadius>3</AddionRadius>
+		<AddionFailing>0.4</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0</Attenuation>
+		<Absorption>0</Absorption>
+		<Accommodate>0</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>None</Kind>
+		<Value>0</Value>         
+		<Radius>1</Radius>
+		<Failing>0</Failing>
+		<FailRadius>0</FailRadius>
+	</Element>
+	
+	<Light>
+		<Value>40</Value>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>2</Radius>
+		<Color>358BA7FF</Color>
+	</Light>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_LingStonehig" Parent="RockBase">
+	<TexPath>res\Sprs\object\object_lingshi01</TexPath>
+	<ThingName>上品灵石</ThingName>	
+	<Desc>灵气高度凝聚而成的结晶体，可以服用恢复100000点灵气，并在一段时间大幅增强对灵气的亲和，汇率100中品=1上品。</Desc>
+	<Rate>10</Rate>
+	<Beauty>12</Beauty>
+	<NoElementKind>1</NoElementKind>
+	<ElementKind>None</ElementKind>
+	<Item Lable="LingStone">
+		<PhysicalLables>
+			<li>Heavy1</li>
+			<li>Hard2</li>
+			<li>GreatThing_Ling</li>
+		</PhysicalLables>
+		<BeMaterial>
+				<NamePrefix>灵石</NamePrefix>
+				<CostMultiplier>1</CostMultiplier>
+				
+				<RateWhenBeMain>7</RateWhenBeMain>
+				<WorkSpeedCoefficientWhenBeMain>1.8</WorkSpeedCoefficientWhenBeMain>
+				
+				<BeautyWhenBeMain>12</BeautyWhenBeMain>
+				<ElementPowerWhenBeMain>0</ElementPowerWhenBeMain>
+		</BeMaterial>
+		<Elixir>
+			<Ling>100000</Ling>
+			<Modifier>Dan_LingCrystal</Modifier>
+		</Elixir>		
+	</Item>
+	<Ling>
+		<AddionLing>50</AddionLing>
+		<AddionRadius>4</AddionRadius>
+		<AddionFailing>0.4</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0</Attenuation>
+		<Absorption>0</Absorption>
+		<Accommodate>0</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>None</Kind>
+		<Value>0</Value>         
+		<Radius>1</Radius>
+		<Failing>0</Failing>
+		<FailRadius>0</FailRadius>
+	</Element>
+	<Light>
+		<Value>50</Value>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>3</Radius>
+		<Color>0082ACFF</Color>
+	</Light>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_LingStonehiggest" Parent="RockBase">
+	<TexPath>res\Sprs\object\object_lingjing01</TexPath>
+	<ThingName>极品灵石</ThingName>	
+	<Desc>灵气高度凝聚而成的结晶体，可以服用恢复20万灵气，并在一段时间大幅增强对灵气的亲和，汇率100上品=1极品。</Desc>
+	<Rate>12</Rate>
+	<Beauty>12</Beauty>
+	<NoElementKind>1</NoElementKind>
+	<ElementKind>None</ElementKind>
+	<Item Lable="LingStone">
+		<PhysicalLables>
+			<li>Heavy1</li>
+			<li>Hard2</li>
+			<li>GreatThing_Ling</li>
+		</PhysicalLables>
+		<BeMaterial>
+				<NamePrefix>极品灵石</NamePrefix>
+				<CostMultiplier>1</CostMultiplier>
+				
+				<RateWhenBeMain>7</RateWhenBeMain>
+				<WorkSpeedCoefficientWhenBeMain>1.8</WorkSpeedCoefficientWhenBeMain>
+				
+				<BeautyWhenBeMain>12</BeautyWhenBeMain>
+				<ElementPowerWhenBeMain>0</ElementPowerWhenBeMain>
+		</BeMaterial>
+		<Elixir>
+			<Ling>200000</Ling>
+			<Modifier>Dan_LingCrystal</Modifier>
+		</Elixir>	 
+	</Item>
+	<Ling>
+		<AddionLing>500</AddionLing>
+		<AddionRadius>5</AddionRadius>
+		<AddionFailing>0.4</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0</Attenuation>
+		<Absorption>0</Absorption>
+		<Accommodate>500</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>None</Kind>
+		<Value>0</Value>         
+		<Radius>1</Radius>
+		<Failing>0</Failing>
+		<FailRadius>0</FailRadius>
+	</Element>
+	<Light>
+		<Value>100</Value>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>3</Radius>
+		<Color>0082ACFF</Color>
+	</Light>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_AF_LD1" Parent="MaterialBase">
+		<ThingName>圭佑250灵石利息单</ThingName>
+		<Desc>可获得251灵石。(0.4%)</Desc>
+		<MaxStack>1</MaxStack>
+		<TexPath>Spr\WF_addItem\ticket.png</TexPath>
+		<Beauty>6</Beauty>	
+		<Rate>6</Rate>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="_StoneBox" Level="1"/>
+		</Tags>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">
+			<NotRandom>0</NotRandom>	
+			<FabaoSuffix>灵票</FabaoSuffix>
+			<BeMade>
+				<WorkToMake>10</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStone" count = "250"/>
+				</CostItems>
+			</BeMade> 			
+		</Item>
+		<StoryBnts>
+			<li Name="领息" Desc="圭佑商会灵石存单，可随时随地领取灵石和利息。" Story="AF_CZLD1" Cost="1" Icon="res/Sprs/ui/icon_dakai01"/>
+		</StoryBnts>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_AF_LD2" Parent="MaterialBase">
+		<ThingName>圭佑500灵石利息单</ThingName>
+		<Desc>可获得502灵石。(0.4%)</Desc>
+		<MaxStack>1</MaxStack>
+		<TexPath>Spr\WF_addItem\ticket.png</TexPath>
+		<Beauty>6</Beauty>	
+		<Rate>6</Rate>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="_StoneBox" Level="1"/>
+		</Tags>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">
+			<NotRandom>0</NotRandom>	
+			<FabaoSuffix>灵票</FabaoSuffix>
+			<BeMade>
+				<WorkToMake>125</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStone" count = "500"/>
+				</CostItems>
+			</BeMade> 			
+		</Item>
+		<StoryBnts>
+			<li Name="领息" Desc="圭佑商会灵石存单，可随时随地领取灵石和利息。" Story="AF_CZLD2" Cost="1" Icon="res/Sprs/ui/icon_dakai01"/>
+		</StoryBnts>
+	</ThingDef>
+
+<ThingDef Type="Item" Name="Item_AF_LD3" Parent="MaterialBase">
+		<ThingName>圭佑50下品灵石利息单</ThingName>
+		<Desc>可获得57下品灵石。(14%)</Desc>
+		<MaxStack>1</MaxStack>
+		<TexPath>Spr\WF_addItem\ticket.png</TexPath>
+		<Beauty>6</Beauty>	
+		<Rate>6</Rate>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="_StoneBox" Level="1"/>
+		</Tags>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">
+			<NotRandom>0</NotRandom>	
+			<FabaoSuffix>灵票</FabaoSuffix>
+			<BeMade>
+				<WorkToMake>175</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStonelow" count = "50"/>
+				</CostItems>
+			</BeMade> 			
+		</Item>
+		<StoryBnts>
+			<li Name="领息" Desc="圭佑商会灵石存单，可随时随地领取灵石和利息。" Story="AF_CZLD3" Cost="1" Icon="res/Sprs/ui/icon_dakai01"/>
+		</StoryBnts>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_AF_LD4" Parent="MaterialBase">
+		<ThingName>圭佑30中品灵石利息单</ThingName>
+		<Desc>可获得33中品灵石。(9%)</Desc>
+		<MaxStack>1</MaxStack>
+		<TexPath>Spr\WF_addItem\ticket.png</TexPath>
+		<Beauty>6</Beauty>	
+		<Rate>6</Rate>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="_StoneBox" Level="1"/>
+		</Tags>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">
+			<NotRandom>0</NotRandom>	
+			<FabaoSuffix>灵票</FabaoSuffix>
+			<BeMade>
+				<WorkToMake>275</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStonemid" count = "30"/>
+				</CostItems>
+			</BeMade> 			
+		</Item>
+		<StoryBnts>
+			<li Name="领息" Desc="圭佑商会灵石存单，可随时随地领取灵石和利息。" Story="AF_CZLD4" Cost="1" Icon="res/Sprs/ui/icon_dakai01"/>
+		</StoryBnts>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_AF_LD5" Parent="MaterialBase">
+		<ThingName>圭佑50中品灵石利息单</ThingName>
+		<Desc>可获得55中品灵石。(9%)</Desc>
+		<MaxStack>1</MaxStack>
+		<TexPath>Spr\WF_addItem\ticket.png</TexPath>
+		<Beauty>6</Beauty>	
+		<Rate>6</Rate>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="_StoneBox" Level="1"/>
+		</Tags>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">
+			<NotRandom>0</NotRandom>	
+			<FabaoSuffix>灵票</FabaoSuffix>
+			<BeMade>
+				<WorkToMake>300</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStonemid" count = "50"/>
+				</CostItems>
+			</BeMade> 			
+		</Item>
+		<StoryBnts>
+			<li Name="领息" Desc="圭佑商会灵石存单，可随时随地领取灵石和利息。" Story="AF_CZLD5" Cost="1" Icon="res/Sprs/ui/icon_dakai01"/>
+		</StoryBnts>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_AF_LD6" Parent="MaterialBase">
+		<ThingName>圭佑30上品灵石利息单</ThingName>
+		<Desc>可获得31上品灵石。(2%)</Desc>
+		<MaxStack>1</MaxStack>
+		<TexPath>Spr\WF_addItem\ticket.png</TexPath>
+		<Beauty>6</Beauty>	
+		<Rate>6</Rate>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="_StoneBox" Level="1"/>
+		</Tags>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">
+			<NotRandom>0</NotRandom>	
+			<FabaoSuffix>灵票</FabaoSuffix>
+			<BeMade>
+				<WorkToMake>450</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStonehig" count = "30"/>
+				</CostItems>
+			</BeMade> 			
+		</Item>
+		<StoryBnts>
+			<li Name="领息" Desc="圭佑商会灵石存单，可随时随地领取灵石和利息。" Story="AF_CZLD6" Cost="1" Icon="res/Sprs/ui/icon_dakai01"/>
+		</StoryBnts>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_AF_LD7" Parent="MaterialBase">
+		<ThingName>圭佑50上品灵石利息单</ThingName>
+		<Desc>可获得51上品灵石。(2%)</Desc>
+		<MaxStack>1</MaxStack>
+		<TexPath>Spr\WF_addItem\ticket.png</TexPath>
+		<Beauty>6</Beauty>	
+		<Rate>6</Rate>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="_StoneBox" Level="1"/>
+		</Tags>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">
+			<NotRandom>0</NotRandom>	
+			<FabaoSuffix>灵票</FabaoSuffix>
+			<BeMade>
+				<WorkToMake>550</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStonehig" count = "50"/>
+				</CostItems>
+			</BeMade> 			
+		</Item>
+		<StoryBnts>
+			<li Name="领息" Desc="圭佑商会灵石存单，可随时随地领取灵石和利息。" Story="AF_CZLD7" Cost="1" Icon="res/Sprs/ui/icon_dakai01"/>
+		</StoryBnts>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_AF_LD8" Parent="MaterialBase">
+		<ThingName>圭佑10极品灵石存款单</ThingName>
+		<Desc>将10极品灵石存入银行。(无利息)</Desc>
+		<MaxStack>1</MaxStack>
+		<TexPath>Spr\WF_addItem\ticket.png</TexPath>
+		<Beauty>6</Beauty>	
+		<Rate>6</Rate>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="_StoneBox" Level="1"/>
+		</Tags>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">
+			<NotRandom>0</NotRandom>	
+			<FabaoSuffix>灵票</FabaoSuffix>
+			<BeMade>
+				<WorkToMake>10</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStonehiggest" count = "10"/>
+				</CostItems>
+			</BeMade> 			
+		</Item>
+		<StoryBnts>
+			<li Name="存入" Desc="将10极品灵石存入银行。(无利息)" Story="AF_CZLD8" Cost="1" Icon="res/Sprs/ui/icon_dakai01"/>
+		</StoryBnts>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_AF_LD9" Parent="MaterialBase">
+		<ThingName>圭佑30极品灵石存款单</ThingName>
+		<Desc>将30极品灵石存入银行。(无利息)</Desc>
+		<MaxStack>1</MaxStack>
+		<TexPath>Spr\WF_addItem\ticket.png</TexPath>
+		<Beauty>6</Beauty>	
+		<Rate>6</Rate>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="_StoneBox" Level="1"/>
+		</Tags>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">
+			<NotRandom>0</NotRandom>	
+			<FabaoSuffix>灵票</FabaoSuffix>
+			<BeMade>
+				<WorkToMake>35</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStonehiggest" count = "30"/>
+				</CostItems>
+			</BeMade> 			
+		</Item>
+		<StoryBnts>
+			<li Name="存入" Desc="将30极品灵石存入银行。(无利息)" Story="AF_CZLD9" Cost="1" Icon="res/Sprs/ui/icon_dakai01"/>
+		</StoryBnts>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_AF_LD10" Parent="MaterialBase">
+		<ThingName>圭佑10上品灵石存款单</ThingName>
+		<Desc>将10上品灵石存入银行。(无利息)</Desc>
+		<MaxStack>1</MaxStack>
+		<TexPath>Spr\WF_addItem\ticket.png</TexPath>
+		<Beauty>6</Beauty>	
+		<Rate>6</Rate>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="_StoneBox" Level="1"/>
+		</Tags>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">
+			<NotRandom>0</NotRandom>	
+			<FabaoSuffix>灵票</FabaoSuffix>
+			<BeMade>
+				<WorkToMake>30</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStonehig" count = "10"/>
+				</CostItems>
+			</BeMade> 			
+		</Item>
+		<StoryBnts>
+			<li Name="存入" Desc="将10上品灵石存入银行。(无利息)" Story="AF_CZLD10" Cost="1" Icon="res/Sprs/ui/icon_dakai01"/>
+		</StoryBnts>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_AF_LD11" Parent="MaterialBase">
+		<ThingName>圭佑30上品灵石存款单</ThingName>
+		<Desc>将30上品灵石存入银行。(无利息)</Desc>
+		<MaxStack>1</MaxStack>
+		<TexPath>Spr\WF_addItem\ticket.png</TexPath>
+		<Beauty>6</Beauty>	
+		<Rate>6</Rate>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="_StoneBox" Level="1"/>
+		</Tags>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">
+			<NotRandom>0</NotRandom>	
+			<FabaoSuffix>灵票</FabaoSuffix>
+			<BeMade>
+				<WorkToMake>35</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStonehig" count = "30"/>
+				</CostItems>
+			</BeMade> 			
+		</Item>
+		<StoryBnts>
+			<li Name="存入" Desc="将30上品灵石存入银行。(无利息)" Story="AF_CZLD11" Cost="1" Icon="res/Sprs/ui/icon_dakai01"/>
+		</StoryBnts>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_AF_LD12" Parent="MaterialBase">
+		<ThingName>圭佑10中品灵石存款单</ThingName>
+		<Desc>将10中品灵石存入银行。(无利息)</Desc>
+		<MaxStack>1</MaxStack>
+		<TexPath>Spr\WF_addItem\ticket.png</TexPath>
+		<Beauty>6</Beauty>	
+		<Rate>6</Rate>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="_StoneBox" Level="1"/>
+		</Tags>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">
+			<NotRandom>0</NotRandom>	
+			<FabaoSuffix>灵票</FabaoSuffix>
+			<BeMade>
+				<WorkToMake>15</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStonemid" count = "10"/>
+				</CostItems>
+			</BeMade> 			
+		</Item>
+		<StoryBnts>
+			<li Name="存入" Desc="将10中品灵石存入银行。(无利息)" Story="AF_CZLD12" Cost="1" Icon="res/Sprs/ui/icon_dakai01"/>
+		</StoryBnts>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_AF_LD13" Parent="MaterialBase">
+		<ThingName>圭佑30中品灵石存款单</ThingName>
+		<Desc>将30中品灵石存入银行。(无利息)</Desc>
+		<MaxStack>1</MaxStack>
+		<TexPath>Spr\WF_addItem\ticket.png</TexPath>
+		<Beauty>6</Beauty>	
+		<Rate>6</Rate>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="_StoneBox" Level="1"/>
+		</Tags>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">
+			<NotRandom>0</NotRandom>	
+			<FabaoSuffix>灵票</FabaoSuffix>
+			<BeMade>
+				<WorkToMake>25</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStonemid" count = "30"/>
+				</CostItems>
+			</BeMade> 			
+		</Item>
+		<StoryBnts>
+			<li Name="存入" Desc="将30中品灵石存入银行。(无利息)" Story="AF_CZLD13" Cost="1" Icon="res/Sprs/ui/icon_dakai01"/>
+		</StoryBnts>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_AF_LD14" Parent="MaterialBase">
+		<ThingName>圭佑50中品灵石存款单</ThingName>
+		<Desc>将50中品灵石存入银行。(无利息)</Desc>
+		<MaxStack>1</MaxStack>
+		<TexPath>Spr\WF_addItem\ticket.png</TexPath>
+		<Beauty>6</Beauty>	
+		<Rate>6</Rate>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="_StoneBox" Level="1"/>
+		</Tags>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">
+			<NotRandom>0</NotRandom>	
+			<FabaoSuffix>灵票</FabaoSuffix>
+			<BeMade>
+				<WorkToMake>20</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStonemid" count = "50"/>
+				</CostItems>
+			</BeMade> 			
+		</Item>
+		<StoryBnts>
+			<li Name="存入" Desc="将50中品灵石存入银行。(无利息)" Story="AF_CZLD14" Cost="1" Icon="res/Sprs/ui/icon_dakai01"/>
+		</StoryBnts>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_AF_LD15" Parent="MaterialBase">
+		<ThingName>圭佑50下品灵石存款单</ThingName>
+		<Desc>将50下品灵石存入银行。(无利息)</Desc>
+		<MaxStack>1</MaxStack>
+		<TexPath>Spr\WF_addItem\ticket.png</TexPath>
+		<Beauty>6</Beauty>	
+		<Rate>6</Rate>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="_StoneBox" Level="1"/>
+		</Tags>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">
+			<NotRandom>0</NotRandom>	
+			<FabaoSuffix>灵票</FabaoSuffix>
+			<BeMade>
+				<WorkToMake>10</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStonelow" count = "50"/>
+				</CostItems>
+			</BeMade> 			
+		</Item>
+		<StoryBnts>
+			<li Name="存入" Desc="将50下品灵石存入银行。(无利息)" Story="AF_CZLD15" Cost="1" Icon="res/Sprs/ui/icon_dakai01"/>
+		</StoryBnts>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_AF_LD16" Parent="MaterialBase">
+		<ThingName>圭佑100下品灵石存款单</ThingName>
+		<Desc>将100下品灵石存入银行。(无利息)</Desc>
+		<MaxStack>1</MaxStack>
+		<TexPath>Spr\WF_addItem\ticket.png</TexPath>
+		<Beauty>6</Beauty>	
+		<Rate>6</Rate>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="_StoneBox" Level="1"/>
+		</Tags>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">
+			<NotRandom>0</NotRandom>	
+			<FabaoSuffix>灵票</FabaoSuffix>
+			<BeMade>
+				<WorkToMake>10</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStonelow" count = "100"/>
+				</CostItems>
+			</BeMade> 			
+		</Item>
+		<StoryBnts>
+			<li Name="存入" Desc="将100下品灵石存入银行。(无利息)" Story="AF_CZLD16" Cost="1" Icon="res/Sprs/ui/icon_dakai01"/>
+		</StoryBnts>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_AF_LD17" Parent="MaterialBase">
+		<ThingName>圭佑300下品灵石存款单</ThingName>
+		<Desc>将300下品灵石存入银行。(无利息)</Desc>
+		<MaxStack>1</MaxStack>
+		<TexPath>Spr\WF_addItem\ticket.png</TexPath>
+		<Beauty>6</Beauty>	
+		<Rate>6</Rate>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="_StoneBox" Level="1"/>
+		</Tags>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">
+			<NotRandom>0</NotRandom>	
+			<FabaoSuffix>灵票</FabaoSuffix>
+			<BeMade>
+				<WorkToMake>10</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStonelow" count = "300"/>
+				</CostItems>
+			</BeMade> 			
+		</Item>
+		<StoryBnts>
+			<li Name="存入" Desc="将300下品灵石存入银行。(无利息)" Story="AF_CZLD17" Cost="1" Icon="res/Sprs/ui/icon_dakai01"/>
+		</StoryBnts>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_AF_LD18" Parent="MaterialBase">
+		<ThingName>300鹿蜀皮存票</ThingName>
+		<Desc>将300鹿蜀皮存入银行。(需35中品灵石保管费!)。</Desc>
+		<MaxStack>1</MaxStack>
+		<TexPath>Spr\WF_addItem\ticket.png</TexPath>
+		<Beauty>9</Beauty>	
+		<Rate>9</Rate>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="_StoneBox" Level="1"/>
+		</Tags>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">
+			<NotRandom>0</NotRandom>	
+			<FabaoSuffix>灵票</FabaoSuffix>
+			<BeMade>
+				<WorkToMake>10</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LuShuLeather" count = "300"/>
+					<Item name = "Item_LingStonemid" count = "35"/>
+				</CostItems>
+			</BeMade> 			
+		</Item>
+		<StoryBnts>
+			<li Name="存入" Desc="将300鹿蜀皮存入银行。" Story="AF_CZLD18" Cost="1" Icon="res/Sprs/ui/icon_dakai01"/>
+		</StoryBnts>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_AF_LD19" Parent="MaterialBase">
+		<ThingName>50妖灵血存票</ThingName>
+		<Desc>将50妖灵血存入银行。(需45中品灵石保管费!)</Desc>
+		<MaxStack>1</MaxStack>
+		<TexPath>Spr\WF_addItem\ticket.png</TexPath>
+		<Beauty>9</Beauty>	
+		<Rate>9</Rate>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="_StoneBox" Level="1"/>
+		</Tags>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">
+			<NotRandom>0</NotRandom>	
+			<FabaoSuffix>灵票</FabaoSuffix>
+			<BeMade>
+				<WorkToMake>10</WorkToMake>
+				<CostItems>
+					<Item name = "Item_MonsterBlood" count = "50"/>
+					<Item name = "Item_LingStonemid" count = "45"/>
+				</CostItems>
+			</BeMade> 			
+		</Item>
+		<StoryBnts>
+			<li Name="存入" Desc="将50妖灵血存入银行。" Story="AF_CZLD19" Cost="1" Icon="res/Sprs/ui/icon_dakai01"/>
+		</StoryBnts>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_AF_LD20" Parent="MaterialBase">
+		<ThingName>300兵粮丸存票</ThingName>
+		<Desc>将300兵粮丸存入银行。(需10中品灵石保管费!)</Desc>
+		<MaxStack>1</MaxStack>
+		<TexPath>Spr\WF_addItem\ticket.png</TexPath>
+		<Beauty>9</Beauty>	
+		<Rate>9</Rate>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="_StoneBox" Level="1"/>
+		</Tags>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">
+			<NotRandom>0</NotRandom>	
+			<FabaoSuffix>灵票</FabaoSuffix>
+			<BeMade>
+				<WorkToMake>10</WorkToMake>
+				<CostItems>
+					<Item name = "Item_Dan_NoHunger1" count = "300"/>
+					<Item name = "Item_LingStonemid" count = "10"/>
+				</CostItems>
+			</BeMade> 			
+		</Item>
+		<StoryBnts>
+			<li Name="存入" Desc="将300兵粮丸存入银行。" Story="AF_CZLD20" Cost="1" Icon="res/Sprs/ui/icon_dakai01"/>
+		</StoryBnts>
+	</ThingDef>
+	
+</List></ThingDefs>

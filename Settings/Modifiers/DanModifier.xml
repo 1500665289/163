@@ -1,0 +1,15 @@
+﻿<ModifierDefs><List>
+		
+	<Modifier Name="Dan_bucircledan" Type="Normal">
+		<DisplayName>补元丹(加强版)</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="AbilityLvAddV" AddV="-20"/>
+			<li Name="MaxAge" AddV="150"/>
+		</Properties>
+	</Modifier>
+
+</List></ModifierDefs>
